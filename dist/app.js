@@ -94,7 +94,7 @@ $('#brief-form').addEventListener('submit',event=>{
   const name=$('#brief-name').value.trim();
   const wishes=$('#brief-wishes').value.trim();
   if(!name||!wishes){$('#brief-status').textContent='Укажите имя и несколько пожеланий к интерьеру.';return;}
-  const text=['БРИФ НА ДИЗАЙН ИНТЕРЬЕРА','ТИШЕ — портфолио-концепт','',`Имя: ${name}`,`Пространство: ${state.property}`,`Площадь: ${state.area} м²`,`Пакет: ${plans[state.plan].name}`,`Тариф: ${format(plans[state.plan].rate)} ₽ / м²`,`Предварительная стоимость дизайна: ${format(state.area*plans[state.plan].rate)} ₽`,'','Пожелания:',wishes,'','Демонстрационные цены. Ремонт, материалы и мебель не включены.','Файл создан локально. Данные в студию не отправлялись.'].join('\n');
+  const text=['БРИФ НА ДИЗАЙН ИНТЕРЬЕРА','ТИШЕ — демонстрационный проект','',`Имя: ${name}`,`Пространство: ${state.property}`,`Площадь: ${state.area} м²`,`Пакет: ${plans[state.plan].name}`,`Тариф: ${format(plans[state.plan].rate)} ₽ / м²`,`Предварительная стоимость дизайна: ${format(state.area*plans[state.plan].rate)} ₽`,'','Пожелания:',wishes,'','Демонстрационные цены. Ремонт, материалы и мебель не включены.','Файл создан локально. Данные в студию не отправлялись.'].join('\n');
   const url=URL.createObjectURL(new Blob(['\uFEFF'+text],{type:'text/plain;charset=utf-8'}));
   const a=document.createElement('a');a.href=url;a.download='tishe-interior-brief.txt';document.body.appendChild(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),2000);
