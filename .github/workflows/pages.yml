@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v4
+      - name: Prepare locally hosted photos and fonts
+        run: python3 download-assets.py
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload static website
