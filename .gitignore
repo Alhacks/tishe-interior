@@ -1,0 +1,6 @@
+.vercel
+.openai
+node_modules
+*.zip
+qa-*
+__pycache__

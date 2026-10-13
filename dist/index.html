@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#efeee7">
+  <meta name="description" content="ТИШЕ — концепт студии дизайна интерьера. Пространства для жизни, натуральные материалы и внимание к деталям. Проекты, услуги и расчёт стоимости.">
+  <meta property="og:title" content="ТИШЕ — пространство, в котором вы дома">
+  <meta property="og:description" content="Лендинг студии дизайна интерьера. Портфолио-концепт с проектами и калькулятором стоимости.">
+  <meta property="og:type" content="website">
+  <title>ТИШЕ — студия дизайна интерьера</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="header">
+    <a class="logo" href="#" aria-label="ТИШЕ — на главную">тише<span>®</span></a>
+    <nav id="navigation" class="navigation" aria-label="Главная навигация">
+      <a href="#approach">О студии</a><a href="#projects">Проекты</a><a href="#services">Услуги</a>
+    </nav>
+    <a class="header-cta" href="#estimate">Обсудить проект <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=85" alt="Светлая гостиная с мягким диваном, натуральным деревом и большими окнами" fetchpriority="high" width="2200" height="1467">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span> СТУДИЯ ДИЗАЙНА ИНТЕРЬЕРА</p>
+        <h1 id="hero-title">Пространство,<br>в котором<br>вы — <em>дома.</em></h1>
+        <p class="hero-description">Интерьеры с характером.<br>Для жизни в вашем ритме.</p>
+        <a class="button button-light" href="#projects">Смотреть проекты <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-bottom"><span>ЭСТЕТИКА. ФУНКЦИЯ. ОЩУЩЕНИЕ ДОМА.</span><a href="#approach" class="scroll-link">Листайте медленно <span aria-hidden="true">↓</span></a></div>
+      <a class="hero-circle" href="#estimate" aria-label="Перейти к расчёту проекта"><span>ВАШ НОВЫЙ<br>ДОМ НАЧИНАЕТСЯ<br>С ИДЕИ</span><b aria-hidden="true">↗</b></a>
+    </section>
+    <div class="values-strip" aria-label="Принципы студии"><span>Тактильные материалы</span><i aria-hidden="true">✳</i><span>Естественный свет</span><i aria-hidden="true">✳</i><span>Продуманная планировка</span><i aria-hidden="true">✳</i><span>Вне быстротечных трендов</span></div>
+    <section id="approach" class="section approach">
+      <div class="section-marker"><span>01 / ФИЛОСОФИЯ</span><span class="marker-line"></span></div>
+      <div class="approach-grid">
+        <h2>Когда за дверью<br>остаётся шум.<br><em>А внутри — вы.</em></h2>
+        <div class="approach-copy"><p>Дом — больше, чем красивые стены. Это утренний свет на кухне, любимое кресло и место, где удобно быть собой.</p><p>Мы начинаем с вашего образа жизни. А затем соединяем архитектуру, цвет и материалы в спокойное, цельное пространство. В котором каждая деталь на своём месте.</p><div class="material-note"><div class="swatches" aria-hidden="true"><span></span><span></span><span></span></div><span>Дерево. Камень. Лён.<br>Красота, которую можно почувствовать.</span></div></div>
+      </div>
+    </section>
+    <section id="projects" class="section projects">
+      <div class="section-marker"><span>02 / ИЗБРАННОЕ</span><span class="marker-line"></span></div>
+      <div class="section-heading"><h2>Разные истории.<br><em>Один подход.</em></h2><p>Три концепции пространства.<br>У каждой — своё настроение.</p></div>
+      <div class="project-tabs" role="group" aria-label="Фильтр проектов"><button class="active" data-filter="all" aria-pressed="true">Все проекты <sup>03</sup></button><button data-filter="apartment" aria-pressed="false">Квартиры <sup>02</sup></button><button data-filter="house" aria-pressed="false">Дома <sup>01</sup></button></div>
+      <div class="project-grid">
+        <button class="project-card project-large" data-category="apartment" data-project="0"><div class="project-image"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85" loading="lazy" alt="Минималистичная гостиная в светлой палитре" width="1400" height="1050"><span class="image-tag">КОНЦЕПТ / 2026</span><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-caption"><h3>Свет и тишина</h3><span>Квартира · 86 м²</span></div></button>
+        <button class="project-card project-small" data-category="house" data-project="1"><div class="project-image"><img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1400&q=85" loading="lazy" alt="Уютный интерьер с натуральными материалами" width="1400" height="1600"><span class="image-tag">КОНЦЕПТ / 2026</span><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-caption"><h3>Ближе к природе</h3><span>Загородный дом · 164 м²</span></div></button>
+        <button class="project-card project-wide" data-category="apartment" data-project="2"><div class="project-image"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=85" loading="lazy" alt="Современное жилое пространство с мягкими природными оттенками" width="1400" height="900"><span class="image-tag">КОНЦЕПТ / 2026</span><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-caption"><h3>Тёплый минимализм</h3><span>Квартира · 62 м²</span></div></button>
+      </div>
+      <p class="portfolio-note">Учебные концепции. Фотографии интерьеров использованы для иллюстрации визуального направления.</p>
+    </section>
+    <section id="services" class="services section">
+      <div class="section-marker"><span>03 / УСЛУГИ</span><span class="marker-line"></span></div>
+      <div class="section-heading"><h2>От первой идеи<br><em>до последней детали.</em></h2><p>Выберите глубину работы.<br>Остальное соберём воедино.</p></div>
+      <div class="service-grid">
+        <article class="service"><span class="service-number">/ 01</span><h3>Основа</h3><p class="service-intro">Чтобы пространство работало<br>на вашу жизнь.</p><ul><li>Обсуждение задачи и образа жизни</li><li>Планировочное решение</li><li>Мудборд и цветовая палитра</li><li>Концепция основных помещений</li></ul><p class="service-price">1 900 <span>₽ / м²</span></p><button class="service-button" data-plan="base">Выбрать пакет <span aria-hidden="true">↗</span></button></article>
+        <article class="service featured"><div class="service-top"><span class="service-number">/ 02</span><span class="service-label">ОПТИМАЛЬНЫЙ</span></div><h3>Полный проект</h3><p class="service-intro">Всё, что нужно для понятной<br>и последовательной реализации.</p><ul><li>Всё из пакета «Основа»</li><li>Визуализация интерьера</li><li>Комплект рабочих чертежей</li><li>Подбор отделки, мебели и света</li></ul><p class="service-price">3 200 <span>₽ / м²</span></p><button class="service-button" data-plan="full">Выбрать пакет <span aria-hidden="true">↗</span></button></article>
+        <article class="service"><span class="service-number">/ 03</span><h3>С сопровождением</h3><p class="service-intro">Когда хочется делегировать<br>и видеть результат.</p><ul><li>Всё из пакета «Полный проект»</li><li>Консультации при реализации</li><li>Согласование замен материалов</li><li>Помощь с комплектацией</li></ul><p class="service-price">4 900 <span>₽ / м²</span></p><button class="service-button" data-plan="care">Выбрать пакет <span aria-hidden="true">↗</span></button></article>
+      </div>
+      <p class="service-footnote">Цены демонстрационные. Стоимость ремонта, мебели и материалов в расчёт не входит.</p>
+    </section>
+    <section class="section process" id="process">
+      <div class="section-marker"><span>04 / ПРОЦЕСС</span><span class="marker-line"></span></div>
+      <div class="section-heading"><h2>Понятный путь<br><em>к вашему дому.</em></h2><p>Без спешки.<br>С вниманием к главному.</p></div>
+      <div class="process-grid"><article><span>01</span><h3>Знакомимся</h3><p>Обсуждаем привычки, пожелания и бюджет. Собираем образы будущего дома.</p></article><article><span>02</span><h3>Находим образ</h3><p>Работаем с планировкой, материалами и палитрой. Согласуем общую концепцию.</p></article><article><span>03</span><h3>Продумываем детали</h3><p>Создаём визуализации и чертежи. Подбираем мебель, отделку и освещение.</p></article><article><span>04</span><h3>Воплощаем</h3><p>Передаём проект для реализации. В пакете с сопровождением помогаем на этом этапе.</p></article></div>
+    </section>
+    <section class="section estimate" id="estimate">
+      <div class="section-marker"><span>05 / ВАШ ПРОЕКТ</span><span class="marker-line"></span></div>
+      <div class="estimate-grid"><div><h2>Начнём<br><em>с вашей идеи.</em></h2><p class="estimate-intro">Прикиньте стоимость дизайна.<br>Достаточно площади и желаемого пакета.</p><form id="estimate-form"><div class="area-label"><label for="area">Площадь пространства</label><div><input id="area-number" type="number" min="30" max="250" value="86" step="1" aria-label="Площадь в квадратных метрах"><span>м²</span></div></div><input id="area" type="range" min="30" max="250" value="86" step="1" aria-label="Площадь пространства"><div class="range-labels"><span>30 м²</span><span>250 м²</span></div><label class="field-label" for="property">Тип пространства</label><select id="property"><option>Квартира</option><option>Загородный дом</option></select><fieldset class="plan-fieldset"><legend>Пакет услуг</legend><label><input type="radio" name="plan" value="base"><span>Основа</span></label><label><input type="radio" name="plan" value="full" checked><span>Полный проект</span></label><label><input type="radio" name="plan" value="care"><span>С сопровождением</span></label></fieldset></form></div><aside class="estimate-result"><span class="result-star" aria-hidden="true">✳</span><p class="eyebrow">ВАШ БУДУЩИЙ ИНТЕРЬЕР</p><div class="result-description"><span id="result-property">Квартира</span><span id="result-area">86 м²</span></div><p class="result-plan" id="result-plan">Полный проект</p><p class="result-total" aria-live="polite" aria-atomic="true"><span id="result-price">275 200</span> <span class="currency">₽</span></p><p class="result-note">Ориентировочная стоимость дизайна.<br>Финальная смета зависит от задачи.</p><button class="button button-light" id="open-brief">Подготовить бриф <span aria-hidden="true">↗</span></button><p class="demo-form-note">Демо для портфолио: бриф скачивается на ваше устройство, заявка в студию не отправляется.</p></aside></div>
+    </section>
+    <section class="section faq"><div class="section-marker"><span>06 / ДЕТАЛИ</span><span class="marker-line"></span></div><div class="faq-grid"><h2>Остались<br><em>вопросы?</em></h2><div class="faq-list"><details><summary>Можно начать с планировки?<span aria-hidden="true">+</span></summary><p>Да. Пакет «Основа» помогает определить планировку и визуальное направление. Полный проект можно выбрать, когда задача и бюджет станут яснее.</p></details><details><summary>Что нужно для начала работы?<span aria-hidden="true">+</span></summary><p>План помещения с размерами, ваши пожелания и ориентир по бюджету. Полезно собрать несколько интерьеров, которые вам близки, и описать привычный день дома.</p></details><details><summary>Что входит в стоимость на калькуляторе?<span aria-hidden="true">+</span></summary><p>Только дизайн по выбранному демонстрационному тарифу. Ремонтные работы, мебель, материалы, доставка и услуги подрядчиков считаются отдельно.</p></details><details><summary>Это сайт настоящей студии?<span aria-hidden="true">+</span></summary><p>«ТИШЕ» — вымышленный бренд, созданный для портфолио веб-разработчика. Проекты и тарифы демонстрационные. Страница показывает дизайн, адаптивную вёрстку и интерактивные сценарии.</p></details></div></div></section>
+    <footer class="footer"><div class="footer-top"><a class="logo" href="#">тише<span>®</span></a><p>Для жизни.<br>Для себя.</p><a href="#estimate" class="footer-link">Давайте создадим<br>ваше пространство <span aria-hidden="true">↗</span></a></div><div class="footer-bottom"><span>© 2026 ТИШЕ. Портфолио-концепт.</span><span>Фотографии: Unsplash</span><a href="#">Наверх ↑</a></div></footer>
+  </main>
+  <dialog id="project-dialog" class="project-dialog"><button class="dialog-close" aria-label="Закрыть проект">×</button><img id="dialog-image" src="" alt=""><div class="project-dialog-content"><p class="eyebrow">ИНТЕРЬЕРНАЯ КОНЦЕПЦИЯ</p><h2 id="dialog-title"></h2><p id="dialog-meta" class="dialog-meta"></p><p id="dialog-description"></p><div id="dialog-tags" class="dialog-tags"></div><p class="portfolio-note">Демонстрационный проект. Изображение иллюстрирует выбранное направление.</p><button class="button button-dark" id="project-to-estimate">Хочу похожее настроение <span aria-hidden="true">↗</span></button></div></dialog>
+  <dialog id="brief-dialog" class="brief-dialog"><button class="dialog-close" aria-label="Закрыть бриф">×</button><p class="eyebrow">ПЕРВЫЙ ШАГ</p><h2>Расскажите<br><em>о вашем доме.</em></h2><p id="brief-summary"></p><form id="brief-form"><label for="brief-name">Как вас зовут</label><input id="brief-name" name="name" maxlength="80" placeholder="Ваше имя" autocomplete="given-name" required><label for="brief-wishes">Что для вас важно в интерьере</label><textarea id="brief-wishes" name="wishes" maxlength="2000" rows="4" placeholder="Например: больше света, место для книг, кухня для всей семьи…" required></textarea><p class="brief-privacy">Данные используются только для создания файла на вашем устройстве.</p><button class="button button-dark" type="submit">Скачать мой бриф <span aria-hidden="true">↓</span></button><p id="brief-status" role="status"></p></form></dialog>
+  <noscript><div class="noscript-note">Для калькулятора и просмотра подробностей проектов включите JavaScript. Остальное содержание страницы доступно без него.</div></noscript>
+</body>
+</html>
